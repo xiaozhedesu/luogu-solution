@@ -1,8 +1,9 @@
 #include <stdio.h>
 
+//通过数字运算解决倒转问题
 double reverseNumber(double number) {
 	double decimal = number - (int)number;
-	int nowInt = 10 * decimal;
+	double nowInt = 10 * decimal;
 
 	int a = (int)number % 10;
 	int b = (int)number / 10 % 10;
