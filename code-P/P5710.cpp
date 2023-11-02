@@ -11,7 +11,7 @@ int isSuki(int number, int people) {
 		return !(!boo1 && !boo2);
 	} else if (people == 3) {
 		//两个条件只能有一个成立（异或）
-		return (boo1 + boo2 == 1) ? 1 : 0;
+		return boo1 ^ boo2;
 	} else if (people == 4) {
 		//两个条件都不成立
 		return !boo1 && !boo2;
