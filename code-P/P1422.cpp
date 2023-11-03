@@ -14,7 +14,7 @@ int main() {
 }
 
 double calcElectricityMoney(int electricity) {
-	if(electricity<= 0) {
+	if(electricity<= 0) { 
 		return 0;
 	} else if(electricity < 150) {
 		return 0.4463*electricity;
