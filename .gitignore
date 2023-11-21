@@ -1,3 +1,5 @@
+.gitignore
+
 *.exe
 
-demo.cpp
+demo*.cpp
