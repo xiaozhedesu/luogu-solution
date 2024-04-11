@@ -1,5 +1,4 @@
-#include <iostream>
-#include <iomanip>
+#include <stdio.h>
 
 using namespace std;
 
@@ -14,8 +13,8 @@ int factorial(int num) {
 	return fac[num - 1];
 }
 
-long double calcE(int quality) {
-	long double e = 1;
+double calcE(int quality) {
+	double e = 1;
 
 	for(int turn = 1; turn <= quality; turn++) {
 		e += 1.0 / factorial(turn);
@@ -28,8 +27,7 @@ int main() {
 	int n;
 	scanf("%d",&n);
 
-	long double result = calcE(n);
-
-	cout << fixed << setprecision(10) << result;
+	double result = calcE(n);
+	printf("%.10lf",result);
 	return 0;
 }
